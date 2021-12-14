@@ -1,35 +1,60 @@
 body {font-family: "Lato", sans-serif;}
-.tablink {
-  background-color: #5F9EA0;
-  color: black;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 16.5%;
-  }
 
-.tablink:hover {
-  background-color: #DCDCDC;
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2F4F4F;
+  overflow-x: hidden;
+  padding-top: 16px;
 }
 
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 50px;
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #DCDCDC;
+  display: block;
   text-align: left;
-  }
+}
 
-#myMe {background-color:#F8F8FF;}
-#myIT {background-color:#F0F8FF;}
-#myJob {background-color:#F5F5F5;}
-#myProfile {background-color:#F5FFFA;}
-#myProject {background-color:#FFFAFA;}
-#myRefences {background-color:#F5F5F5;}
+.sidebar a:hover {
+  color: #000000;
+}
 
+.main {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
 
+.myMe {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+.myIT {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+.myJob {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+.myProfile {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+.myProject {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
 h1 {color: #000;
 	font-size: 250%;
 	font-style: bold;}
@@ -41,23 +66,26 @@ h1 {color: #000;
 	h3 {color: #000;
 		font-size: 150%;
 		font-style: bold;}
-	 h4 {color: #000;
+	h4 {color: #000;
 		font-size: 100%;
 		font-style: italic, bold;}
 	
 	p {color: #000;
 	   font-size: 100%;}
-
+	   
+	f {color: #000;
+	   font-size: 80%;}
 
 body {
   margin:10;
-}
+} 
 
 table, th, td{
   border: 1px white;
   font-size: 100%;
   text-align: left;
   }
+
 
 table {
   width: 100%;
@@ -75,4 +103,14 @@ li {
 blockquote{
 	font-style: italic;
 	
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #D2D2D2;
+  color: white;
+  text-align: center;
+
 }
